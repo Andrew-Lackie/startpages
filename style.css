@@ -26,7 +26,7 @@ html, body {
 	border-color: var(--color-link-hover);
 }
 
-.container {
+.grid-container {
   height: 575px;
 	display: grid;
 	grid-template-columns: auto auto;
@@ -37,14 +37,14 @@ html, body {
   align-items: center;
 }
 
-#left-container {
+#left-grid-container {
 	grid-area: left;
 	aspect-ratio: 1/1;
   margin-right: 50px;
 
 }
 
-#right-container {
+#right-grid-container {
 	grid-area: right;
 	height: 50%;
 	width: 50%;
