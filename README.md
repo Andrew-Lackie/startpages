@@ -2,4 +2,10 @@
 
 It is best used with the Dracula theme in FireFox.
 
-![Screenshot](img/synthwave-startpage.png)
+## Synthwave 
+
+![Screenshot](synthwave/img/synthwave-startpage.png)
+
+## Hacking 
+
+![Screenshot](hacking/img/hacking-startpage.png)
