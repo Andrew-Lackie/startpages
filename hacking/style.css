@@ -1,11 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300&family=Major+Mono+Display&display=swap');
 
 :root {
-    --color-bg: #1E1E2E;
+    --color-bg: #444444 ;
+    --color-term-bg: #1E1E2E;
     --color-fg: #FF79c6;
+    --color-grey-border: #808080;
     --color-link: #8F9191;
     --color-link-visited: #F5C2E7;
     --color-link-hover: #FF79C6 ;
+    --color-title: #6df1d8;
 }
   
 html, body {
@@ -18,45 +21,58 @@ html, body {
   padding: 0;
 }
 
-.alien {
-  margin-top: 100px;
-  margin-left: 40px;
-	border-radius: 12px; 
-	border-style: solid;
-	border-color: var(--color-link-hover);
+.wrapper {
+  min-height: 100%;
+  min-width: 100%
+  }
+
+.container {
+  display: grid;
+  position: fixed;
+  height: 450px;
+  width: 700px;
+  margin-left: 22%;
+  top: 20%;
+  grid-template-columns: 30% 70%;
+  border-style: solid;
+  border-color: var(--color-border);
+  border-width: 3px;
+  border-radius: 10px;
+  box-shadow: 8px 10px 25px;
+  
 }
 
-.grid-container {
-  height: 575px;
-	display: grid;
-	grid-template-columns: auto auto;
-  grid-template-areas:
-    ". left right .";
-  column-gap: 5;
-  justify-items: center;
-  align-items: center;
+.left-container {
+  margin-left: 30%;
+  margin-top: auto;
+  margin-bottom: auto;
 }
 
-#left-grid-container {
-	grid-area: left;
-	aspect-ratio: 1/1;
-  margin-right: 50px;
-
+.computer {
+  height: 100px;
 }
 
-#right-grid-container {
-	grid-area: right;
-	height: 50%;
-	width: 50%;
+.right-container {
+  margin-left: auto;
+  margin-right: 20%;
+  margin-top: auto;
+  margin-bottom: auto;
+  border-style: solid;
+  border-color: var(--color-fg);
+  border-radius: 10px;
+  background-color: var(--color-term-bg);
 }
 
 .head {
   font-family: 'Fira Code', monospace;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  font-size: 40px;
-  padding-top: 60px;
+  font-size: 10px;
+  padding-left: 15px;
+}
+
+.date {
+  color: var(--color-title);
 }
 
 .category {
@@ -81,6 +97,7 @@ html, body {
 .title {
   font-size: 20px;
   font-family: 'Fira Code', monospace;
+  color: var(--color-title);
 }
 
 li {

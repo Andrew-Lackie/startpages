@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="style.css"/>
+  <link rel="stylesheet" href="https://fonts.google.com/specimen/Major+Mono+Display?category=Monospace">
+	<title>Hacker</title>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="container">
+            <div class="left-container">
+                <img class="computer" src="gif/computer-cd-pixel.gif"/> 					
+            </div>
+
+            <div class="right-container">
+                <div class="head">
+                    <div class="command">
+                        <p>~ > date</span></p>
+                    </div>
+
+                    <div class="date">
+                        <p id="sample"></p>
+                        <script>
+                            var dates = new Date(); 
+                            document.getElementById("sample").innerHTML = dates;
+                        </script>
+                    </div>
+
+                    <div class="command">
+                       <p>~ > ls -l<span class="blinking">_</span></p>
+                    </div>
+
+
+                </div>
+
+                <div class="bookmarks">
+                    <div class="category">
+                        <div class="links">
+                            <li class="title">/dev</li>
+                            <li><a href="https://outlook.live.com/">Outlook</a></li>
+                            <li><a href="https://github.com/Andrew-Lackie">Github</a></li>
+                            <li><a href="https://linkedin.com">Linkedin</a></li>
+                            <li><a href="https://www.youtube.com/">Youtube</a></li>
+                        </div>
+                    </div>
+
+                    <div class="category">
+                        <div class="links">
+                            <li class="title"><a style="color: #EADBB2" href="https://reddit.com">/r</a></li>
+                            <li><a href="https://reddit.com/r/programming/">r/programming</a></li>
+                            <li><a href="https://reddit.com/r/archlinux/">r/archlinux</a></li>
+                            <li><a href="https://reddit.com/r/unixporn/">r/unixporn</a></li>
+                            <li><a href="https://reddit.com/r/russian/">r/russian</a></li>
+                        </div>
+                    </div>
+
+                    <div class="category">
+                        <div class="links">
+                            <li class="title">/opt</li>
+                            <li><a href="https://amazon.ca">Amazon</a></li>
+                            <li><a href="https://ebay.ca/">Ebay</a></li>
+                            <li><a href="https://www.amazon.com/Amazon-Video/b/?ie=UTF8&node=2858778011&ref_=nav_cs_prime_video/">Prime Video</a></li>
+                            <li><a href="https://netflix.com/">Netflix</a></li>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+</body>
+</html>
