@@ -1,6 +1,4 @@
-# Synthwave Startpage
-
-HTML and CSS only startpage. 
+# Synthwave and Hacking Startpages 
 
 It is best used with the Dracula theme in FireFox.
 
